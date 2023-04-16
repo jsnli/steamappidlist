@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const fs = require('fs');
-const baseURL = "https://api.steampowered.com/IStoreService/GetAppList/v1/?key=${process.env.STEAM_KEY}&include_games=true&include_dlc=false&include_software=false&include_videos=false&include_hardware=false&max_results=50000";
+const baseURL = `https://api.steampowered.com/IStoreService/GetAppList/v1/?key=${process.env.STEAM_KEY}&include_games=true&include_dlc=false&include_software=false&include_videos=false&include_hardware=false&max_results=50000`;
 
 async function run() {
     let outputJSON = {
