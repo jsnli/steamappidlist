@@ -18,6 +18,8 @@ jobs:
 
       - name: Run index.js
         run: node index.js
+        with:
+          STEAM_KEY: ${{ secrets.STEAM_KEY }}
 
       - name: Push
         uses: actions-js/push@master
