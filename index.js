@@ -7,7 +7,7 @@ async function run() {
     try {
         const response = await fetch(url);
         const jsonData = await response.json();
-        const jsonString = JSON.stringify(jsonData.response.apps[0]);
+        const jsonString = JSON.stringify(jsonData.response.apps);
 
         fs.writeFileSync('data.json', jsonString, (error) => {
             if (error) throw error;
