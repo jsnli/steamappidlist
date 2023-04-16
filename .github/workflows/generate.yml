@@ -1,10 +1,12 @@
-name: Generate Data
+name: Fetch Data
 run-name: Fetch and Write Data
 on:
   workflow_dispatch:
   push:
     branches:
       - 'master'
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   build:
