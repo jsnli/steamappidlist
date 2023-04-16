@@ -1,7 +1,7 @@
 name: Generate Data
 run-name: Fetch and Write Data
 on:
-  workflow-dispatch:
+  workflow_dispatch:
   push:
     branches:
       - 'master'
