@@ -1,11 +1,11 @@
 name: Generate Data
 run-name: Fetch and Write Data
 on:
-  workflow-dispatch
+  workflow-dispatch:
   push:
     branches:
       - 'master'
-      
+
 jobs:
   build:
     runs-on: ubuntu-latest
