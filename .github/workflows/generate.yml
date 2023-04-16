@@ -1,7 +1,11 @@
 name: Generate Data
 run-name: Fetch and Write Data
-on: [push]
-
+on:
+  workflow-dispatch
+  push:
+    branches:
+      - 'master'
+      
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,4 +24,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: "master"
-          
