@@ -16,11 +16,11 @@ async function run() {
 }
 
 /**
- * Returns x raised to the n-th power.
+ * requests first or next set of appid based on last_appid
  *
  * @param {number} last_appid appID of last entry. used to continue in subsequent calls.
  * @param {string} endpoint The power, must be a natural number.
- * @return {json} data containing app id and app name
+ * @return {object} data containing app id and app name
  */
 async function getAppList(last_appid, endpoint) {
     // api limits results to 50000 with a last_appid returned for continuation
