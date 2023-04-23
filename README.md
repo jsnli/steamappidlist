@@ -14,7 +14,7 @@ https://api.steampowered.com/IStoreService/GetAppList/v1/
 ```
 
 Another endpoint is available here ```https://api.steampowered.com/ISteamApps/GetAppList/v2/```
-This endpoint returns all the name and appid of all applications regardless of category. 
+This endpoint returns the names and appids of all applications regardless of category without requiring a key.
 
 ## Info
 
