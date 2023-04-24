@@ -23,7 +23,6 @@ This repo runs daily through Github Actions and pushes the latest to this repo t
 ## Usage
 
 Datasets can be found in the [data folder](https://github.com/jsnli/SteamAppIDList/tree/master/data).
-> Cloning/Downloading the repo is recommended to browse the data as the large dataset can cause some browsers to lock up.
 
 To run the script locally, replace the following with your own Steam Key in index.js
 ```
@@ -33,6 +32,3 @@ Then run from directory to generate to the data folder
 ```
 node index.js
 ```
-
-Anyone is welcome to use this code and make their own changes for any purpose. No credit is needed.
-
