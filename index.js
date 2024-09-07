@@ -34,7 +34,7 @@ async function requestData(category) {
     const endpoint = `${baseURL}key=${key}${gameParam}${dlcParam}${softwareParam}${videosParam}${hardwareParam}&max_results=50000`;
 
 
-    let outputJSON = {};
+    let outputJSON = [];
 
     try {
         let have_more_results = true;
