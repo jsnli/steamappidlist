@@ -45,6 +45,12 @@ async function requestData(category) {
             have_more_results = appList.response.have_more_results;
             last_appid = appList.response.last_appid;
         }
+
+				if (outputJSON == [null]) {
+					console.log(`${category} null error`);
+					return;
+				}
+
         fs.writeFileSync(`./data/${category}_appid.json`, JSON.stringify(outputJSON), (error) => {
             if (error) throw error;
         });
